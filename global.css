@@ -1,0 +1,69 @@
+:root {
+    --background-color: #ffffff;
+
+    --primary-color: #2197ff;
+    --secondary-color: #177bb7;
+
+    --text-color: #000000;
+    --text-color-secondary: #808080;
+
+    --cell-background-color: white;
+    --cell-border-color: lightgrey;
+    
+    --overlay-background-color: rgba(0, 0, 0, 0.5);
+    --overlay-text-color: white;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    user-select: none;
+}
+
+html {
+    background-color: var(--background-color);
+    font-family: sans-serif;
+}
+
+main {
+    padding: 0 10vw;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 16px 0;
+    text-align: center;
+    color: var(--text-color-secondary);
+}
+
+h1 {
+    color: var(--primary-color);
+    padding: 24px;
+}
+
+select {
+    padding: 8px;
+    font-size: 1rem;
+    margin: 10px;
+}
+
+button {
+    background-color: var(--primary-color);
+    padding: 12px 48px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}
+
+select option:disabled {
+    text-decoration: line-through;
+}

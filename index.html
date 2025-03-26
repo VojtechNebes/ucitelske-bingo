@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Učitelské Bingo!</title>
+
+    <link rel="stylesheet" href="/global.css">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <main>
+        <h1>Učitelské Bingo!</h1>
+        <p>Vyber si velikost tabulky a učitele, kterého máš zrovna na hodinu a zmáčkni Play.</p>
+
+        <div class="ucitel-selection">
+            <select id="modeDropdown">
+                <option value="3">3x3</option>
+                <option value="4">4x4</option>
+                <option value="5" selected>5x5</option>
+            </select>
+
+            <select id="ucitelDropdown">
+                <option value="kafka" class="mode-3 mode-4">Kafka</option>
+                <option value="zykova" class="mode-3 mode-4 mode-5">Zýková</option>
+                <option value="miskovsky" class="mode-3">Miškovský</option>
+                <option value="liptakova" class="mode-3">Liptáková</option>
+            </select>
+        </div>
+
+        <button id="playButton">Play</button>
+    </main>
+
+    <footer>
+        Created by Vojtěch Nebes and others (SSPŠ, 2025)
+    </footer>
+
+    <script>
+        const ucitelSelect = document.getElementById("ucitelDropdown");
+        const modeSelect = document.getElementById("modeDropdown");
+
+        function refreshUcitelOptions() {
+            const selectedMode = modeSelect.value;
+            const selectedValue = ucitelSelect.value;
+            let isSelectedOptionAvailable = false;
+
+            const options = ucitelSelect.querySelectorAll("option");
+
+            options.forEach(option => {
+                if (option.classList.contains(`mode-${selectedMode}`)) {
+                    option.disabled = false;
+                    if (option.value === selectedValue) {
+                        isSelectedOptionAvailable = true;
+                    }
+                } else {
+                    option.disabled = true;
+                }
+            });
+
+            if (!isSelectedOptionAvailable) {
+                const firstEnabledOption = ucitelSelect.querySelector("option:not(:disabled)");
+                if (firstEnabledOption) {
+                    firstEnabledOption.selected = true;
+                }
+            }
+        }
+
+        modeSelect.addEventListener("change", refreshUcitelOptions);
+
+        document.getElementById("playButton").addEventListener("click", function () {
+            window.location.href = `/play/?mode=${modeSelect.value}&ucitel=${ucitelSelect.value}`;
+        });
+
+        refreshUcitelOptions();
+    </script>
+
+</body>
+
+</html>
