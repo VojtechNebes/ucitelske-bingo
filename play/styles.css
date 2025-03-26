@@ -25,10 +25,12 @@ main {
     align-items: center;
     justify-content: center;
     text-align: center;
+    font-size: 1rem;
 }
 
 #bingoGrid > div.clicked {
     background-color: var(--primary-color);
+    color: white;
     border-color: var(--primary-color);
 }
 
@@ -60,7 +62,7 @@ main {
 
     #bingoGrid > div {
         padding: 2px;
-        font-size: 0.5rem;
+        font-size: 0.8rem;
         border-width: 2px;
     }
 }
