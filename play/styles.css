@@ -1,68 +1,68 @@
 main {
-    text-align: center;
+	text-align: center;
 }
 
 #bingoGrid {
-    display: grid;
-    /* grid-template-columns: repeat(3, 1fr); */
-    grid-gap: 10px;
-    /* width: 100%; */
-    max-width: 100%;
-    margin: 0 auto;
+	display: grid;
+	/* grid-template-columns: repeat(3, 1fr); */
+	grid-gap: 10px;
+	/* width: 100%; */
+	max-width: 100%;
+	margin: 0 auto;
 }
 
 #bingoGrid > div {
-    background-color: var(--cell-background-color);
-    border: 3px solid var(--cell-border-color);
-    border-radius: 10px;
-    padding: 20px;
-    cursor: pointer;
-    user-select: none;
-    transition: background-color 0.2s, border-color 0.2s;
-    box-sizing: border-box;
-    min-height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 1rem;
+	background-color: var(--cell-background-color);
+	border: 3px solid var(--cell-border-color);
+	border-radius: 10px;
+	padding: 20px;
+	cursor: pointer;
+	user-select: none;
+	transition: background-color 0.2s, border-color 0.2s;
+	box-sizing: border-box;
+	min-height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-size: 1rem;
 }
 
 #bingoGrid > div.clicked {
-    background-color: var(--primary-color);
-    color: white;
-    border-color: var(--primary-color);
+	background-color: var(--primary-color);
+	color: white;
+	border-color: var(--primary-color);
 }
 
 .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: var(--overlay-background-color);
-    display: none;
-    /* Hidden by default */
-    justify-content: center;
-    align-items: center;
-    color: var(--overlay-text-color);
-    font-size: 4em;
-    z-index: 1000;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: var(--overlay-background-color);
+	display: none;
+	/* Hidden by default */
+	justify-content: center;
+	align-items: center;
+	color: var(--overlay-text-color);
+	font-size: 4em;
+	z-index: 1000;
 }
 
 @media screen and (orientation: portrait) {
-    main {
-        padding: 0 8px;
-    }
+	main {
+		padding: 0 8px;
+	}
 
-    #bingoGrid {
-        grid-gap: 2px;
-        /* justify-content: center; */
-    }
+	#bingoGrid {
+		grid-gap: 2px;
+		/* justify-content: center; */
+	}
 
-    #bingoGrid > div {
-        padding: 2px;
-        font-size: 0.8rem;
-        border-width: 2px;
-    }
+	#bingoGrid > div {
+		padding: 2px;
+		font-size: 0.8rem;
+		border-width: 2px;
+	}
 }
