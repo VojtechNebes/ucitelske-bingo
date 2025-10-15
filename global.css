@@ -67,3 +67,8 @@ button:hover {
 select option:disabled {
     text-decoration: line-through;
 }
+
+a {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
