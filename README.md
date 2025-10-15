@@ -4,6 +4,12 @@ Hra pro SSPŠ studenty
 # Contributing
 Pokud máte učitele, který ve hře ještě není, nebo jen chcete přidat další možnosti, můžete vytvořit *pull request*.
 
+### Když nejsem IT člověk
+Když neumíte udělat pull request nebo nechápete, jak upravit web, můžete mi alternativně [napsat na Discord](https://discord.com/users/775389642689085471).
+Preferuji ale pull request. Nepište mi prosím pokud to zvládnete, ale jste jen líní to dělat.
+
+
+## Jak na to
 Formát je následující:
 - V `/index.html` je tag `<select id="ucitelDropdown">`, do kterého můžete přidávat nové učitele.
 - CSS třídy `mode-3`, `mode-4` a `mode-5` určují, jak velká může být bingo tabulka. Pro tabulku 3x3 (`mode-3`) je potřeba 9 a více možností. Pro 4x4 16 možností, ...
