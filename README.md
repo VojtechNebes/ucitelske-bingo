@@ -1,5 +1,6 @@
 # Učitelské Bingo!
 Hra pro SSPŠ studenty
+
 [bingo.nebes.cz](https://bingo.nebes.cz)
 
 # Contributing
