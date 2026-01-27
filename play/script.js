@@ -99,10 +99,12 @@ function setupCellClickHandlers(cells) {
 
     cells.forEach(cell => {
         cell.addEventListener('click', function () {
-            if (this.classList.contains('clicked')) return;
-            this.classList.add('clicked');
-
-            if (checkBingo()) showBingo();
+            if (this.classList.contains('clicked')) {
+                this.classList.remove('clicked');
+            } else {
+                this.classList.add('clicked');
+                if (checkBingo()) showBingo();
+            }
         });
     });
 }
