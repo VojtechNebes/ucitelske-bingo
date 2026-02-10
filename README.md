@@ -6,7 +6,7 @@
 
 Hra pro SSPŠ studenty
 
-[bingo.nebes.cz](https://bingo.nebes.cz)
+Zahrajte si tady: [bingo.nebes.cz](https://bingo.nebes.cz)
 
 # Contributing
 Pokud máte učitele, který ve hře ještě není, nebo jen chcete přidat další možnosti, můžete vytvořit *pull request*.
