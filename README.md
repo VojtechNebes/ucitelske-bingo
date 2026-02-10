@@ -1,4 +1,9 @@
+<p align="center">
+    <a href="https://www.buymeacoffee.com/thurius" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 3rem !important;width: 10.85rem !important;"></a>
+</p>
+
 # Učitelské Bingo!
+
 Hra pro SSPŠ studenty
 
 [bingo.nebes.cz](https://bingo.nebes.cz)
